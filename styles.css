@@ -161,6 +161,13 @@ nav > ul > li> a:hover{
   padding: 20px;
   box-sizing: border-box;
 }
+@media screen and (max-width:400px){
+  #welcome-section{
+    margin: 200px;
+    font-size: 24px;
+    height: 50%;
+  }
+}
 @media screen and (max-width: 980px) {
   #welcome-section{
     margin: 200px;
@@ -257,19 +264,26 @@ nav > ul > li> a:hover{
 }
 
 #skills{
-  margin: 50px;
+  margin: 50px 50px 100px 50px;
   height: 20vh;
 }
+@media screen and (max-width:890px){
+  #skills{
+    margin-bottom: 50px;
+  }
+}
+
 h1{
   text-align: center;
   font-size: 2em;
 }
 .skill{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   place-items: center;
   margin-top:50px;
 }
+
 .language{
   display: flex;
   align-items: center;
@@ -297,20 +311,18 @@ h1{
 }
 
 #contacts {
-  display: grid;
-  place-items: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
 }
 
 #contact {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width:790px){
-  #contact{
-    height: 50vh;
-  }
-}
+
 #contacts h2 {
   text-align: center;
   margin: 40px;
@@ -318,28 +330,29 @@ h1{
 
 .social {
   display: flex;
-  gap: 200px;
+  gap: 20px;
+  align-items: center;
 }
-.social a{
+
+.social a {
   text-decoration: none;
 }
-.social i{
+
+.social i {
   font-size: 3em;
-  color: #f3f7eb
+  color: #f3f7eb;
 }
-.social p{
+
+.social p {
   font-size: 1em;
   color: #f3f7eb;
   margin-top: 10px;
 }
-@media (max-width:690px){
-  #contacts{
-    display: flex;
+
+@media (max-width: 900px) {
+  .social {
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-  }
-  .social{
-    flex-direction: column;
-    gap:25px;
   }
 }
+
