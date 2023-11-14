@@ -27,11 +27,15 @@ header {
   border-bottom: 1px solid transparent;
   transition: all ease .50s;
 }
+.logo{
+  width: 130px;
+  height: 130px;
+}
 nav{
   display: flex;
   justify-content: space-around;
   background-color: #828485;
-  height: 60px;
+  height: 140px;
 }
 header > nav > ul{
   display:flex;
@@ -71,6 +75,7 @@ nav > ul > li> a:hover{
   text-align: start;
 }
 
+
 .job {
   font-weight: bold;
   color: #c4ced4;
@@ -93,6 +98,7 @@ nav > ul > li> a:hover{
   border: #27251f 2px solid;
   border-radius: 5px;
   margin-top: 30px;
+  font-weight: 600;
   flex-wrap: nowrap;
 }
 
@@ -141,14 +147,30 @@ nav > ul > li> a:hover{
 }
 @media screen and (max-width: 980px) {
   #welcome-section{
+    margin: 200px;
+    font-size: 24px;
     height: 50%;
-    margin: 100px;
+  }
+  #welcome-section, .job-title{
+    font-size: 28px;
+    margin: 200px 80px 10px;
+    text-align: center;
+  } 
+  .job{
+    font-size: 33px;
   }
   .welcome-grid{
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 50px;
     justify-content: center;
+  }
+  #welcome-section .resume {
+    padding: 8px;
+    width: 25%;
+    height: 30%;
+    font-size: 24px;
+    font-weight: 500;
   }
   .about{
     display: inherit;
@@ -162,6 +184,9 @@ nav > ul > li> a:hover{
 #projects{
   margin-bottom: 30px;
   text-align: center;
+}
+#projects .project-title {
+  font-size: 2em; 
 }
 .grid-project{
   display: flex;
@@ -183,12 +208,28 @@ nav > ul > li> a:hover{
   max-width: 1280px;
   margin-bottom: 6rem;  
 }
+.see-more {
+  margin-top: -50px;
+  text-align: right;
+  margin-right: 15%;
+}
+.see-more a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.see-more a:hover{
+  text-decoration:underline;
+  color: #a8b0b4;
+}
 
 @media (max-width: 690px) {
   #work {
     display:flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .see-more {
+    margin: -70px 0 0 180px;
   }
 
   .grid {
