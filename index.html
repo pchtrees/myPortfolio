@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">    
-  <head>
-    <meta charset="UTF-8">
-    <title>Personal Portfolio</title>
-    <link href="styles.css" rel="stylesheet" />  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <ul>
-          <a href="#" class="logo">PeachTrees</a>
-        </ul>
-        <ul>
-          <li><a href="#welcome-section">About</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+<li><a id="profile-link" href="#" class="logo" target="_blank">PeachTrees</a></li>
+      </ul>
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section id="welcome-section">
       <div class="welcome-grid">
-      <div class="about">
-        <h1 class="name">Hi, I'm Pauline</h1>
-        <p class="job-title">a <span class="job">Front-End Developer</span>  who loves making responsive websites with animations. Let's build something amazing together!</p>
-        <button type="submit" class="resume">Download CV</button>
+        <div class="about">
+          <h1 class="name">Hi, I'm Pauline</h1>
+          <p class="job-title">a <span class="job">Front-End Developer</span> who loves making responsive websites with
+            animations. Let's build something amazing together!</p>
+          <button type="submit" class="resume">Download CV</button>
+        </div>
+        <div class="photo">
+          <div class="photo-bg"></div>
+          <div class="pic"></div>
+        </div>
       </div>
-      <div class="photo">
-        <div class="photo-bg"></div>
-        <div class="pic"></div>
-      </div>
-    </div>
     </section>
-    <section id="work">
-      <div id="projects"><h1 class="project-title">Free Code Camp Challenges</h1></div>
+    <section id="projects">
+      <h1 class="project-title">Free Code Camp Challenges</h1>
       <div class="grid-project">
-      <div class="grid">
+        <div class="grid">
           <a href="https://pchtrees.github.io/Museum-Feedback-Form/" target="_blank" class="project-tile">
             <img src="https://i.ibb.co/Cz7hMZY/feedback.png" alt="project-image" class="project-image">
             <p class="project-title">Museum Feedback Form</p>
@@ -54,27 +58,25 @@
             <p class="project-title">Product Landing Page</p>
           </a>
         </div>
-    </div>
-
+      </div>
     </section>
     <section id="skills">
       <h1>SKILLS</h1>
       <div class="skill">
-      <div class="language">
-        <span class="icon"><i class="fa-brands fa-html5"></i></span>
-        <h3>HTML</h3>
-      </div>
-      <div class="language">
-        <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
-        <h3>CSS</h3>
-      </div>
-      <div class="language">
-        <span class="icon"><i class="fa-brands fa-js"></i></span>
-        <h3>JAVASCRIPT</h3>
-      </div>
+        <div class="language">
+          <span class="icon"><i class="fa-brands fa-html5"></i></span>
+          <h3>HTML</h3>
+        </div>
+        <div class="language">
+          <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
+          <h3>CSS</h3>
+        </div>
+        <div class="language">
+          <span class="icon"><i class="fa-brands fa-js"></i></span>
+          <h3>JAVASCRIPT</h3>
+        </div>
       </div>
     </section>
-
     <section id="contacts">
       <div id="contact">
         <h1>CONTACT ME</h1>
@@ -95,7 +97,6 @@
         </a>
       </div>
     </section>
-    
-    </main>
-  </body>
+  </main>
+</body>
 </html>
