@@ -58,23 +58,30 @@ nav > ul > li> a:hover{
   text-decoration: underline;
   transition:  0.6s ;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
+
   nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .logo{
+    font-size: 4em;
+  }
+  ul {
+    font-size: 2em;
   }
 }
 #welcome-section {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  margin: 30px;
+  margin: 40px;
 }
 .welcome-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: auto ; 
+  margin: auto; 
   grid-gap: 200px;
 
 }
@@ -162,7 +169,7 @@ nav > ul > li> a:hover{
   }
   #welcome-section, .job-title{
     font-size: 28px;
-    margin: 200px 80px 10px;
+    margin: 400px 80px 10px;
     text-align: center;
   } 
   .job{
@@ -217,19 +224,7 @@ nav > ul > li> a:hover{
   max-width: 1280px;
   margin-bottom: 6rem;  
 }
-.see-more {
-  margin-top: -50px;
-  text-align: right;
-  margin-right: 15%;
-}
-.see-more a {
-  text-decoration: none;
-  color: #fafafa;
-}
-.see-more a:hover{
-  text-decoration:underline;
-  color: #a8b0b4;
-}
+
 
 @media (max-width: 690px) {
   #work {
@@ -237,9 +232,7 @@ nav > ul > li> a:hover{
     justify-content: center;
     flex-direction: column;
   }
-  .see-more {
-    margin: -70px 0 0 180px;
-  }
+
 
   .grid {
     grid-template-columns: 1fr;
@@ -269,6 +262,7 @@ nav > ul > li> a:hover{
 }
 h1{
   text-align: center;
+  font-size: 2em;
 }
 .skill{
   display: grid;
